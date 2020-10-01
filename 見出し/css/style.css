@@ -1,0 +1,96 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.headline{
+  padding: .5em .75em;
+  line-height: 125%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.headline-skin1 {
+  border-top: solid 3px #333;
+  border-bottom: solid 3px #333;
+  text-align: center;
+}
+
+.headline-skin2{
+  margin-left: 20px;
+  border-left: solid 6px #333;
+}
+
+.headline-skin3{
+  background: #eee;
+}
+
+.headline-skin4{
+  border-radius: 4px;
+  box-shadow: 0 0 0 6px #333;
+  border: dashed 2px #ffffff;
+  background: #333;
+  color: #ffffff
+}
+
+.headline-skin5{
+  margin-left: 20px;
+  position: relative;
+  border-radius: 4px;
+  background: #333;
+  color: #ffffff
+}
+.headline-skin5::before{
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: .75em;
+  display: block;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #333333;
+}
+
+.headline-skin6{
+  padding: .5em .25em;
+  background: linear-gradient(to top, transparent .4em, #33333388 .4em, #33333388 1em, transparent 1em);
+}
+
+.headline-skin7{
+  display: inline-flex;
+  align-items: center;
+}
+.headline-skin7::before{
+  content: "▶︎";
+  color: #333;
+  font-size: 16px;
+  margin-left: -0.75em; 
+  margin-right: 0.5em;
+}
+
+.headline-skin8{
+  display: flex;
+  align-items: center;
+}
+.headline-skin8::before,.headline-skin8::after{
+  content: "";
+  display: block;
+  height: 2px;
+  flex: auto;
+  background: #333333;
+  color: #333;
+  font-size: 16px;
+  margin: 0 .25em;
+}
